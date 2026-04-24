@@ -9,7 +9,7 @@ import java.io.IOException;
  * 模拟服务器注册到zookeeper
  * @author Mr.MC
  */
-public class ZkServer extends BaseServer {
+public class DistributeServer extends BaseServer {
 
     private String connectString = "10.111.208.237:2181,10.111.208.237:2182,10.111.208.237:2183";
 
@@ -18,7 +18,7 @@ public class ZkServer extends BaseServer {
     private ZooKeeper zk;
 
     public static void main(String[] args) throws IOException, InterruptedException, KeeperException {
-        ZkServer server = new ZkServer();
+        DistributeServer server = new DistributeServer();
         // 1、获取zookeeper连接
         server.getConnect();
         // 2、注册服务器到zookeeper集群

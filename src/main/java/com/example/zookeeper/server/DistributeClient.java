@@ -14,7 +14,7 @@ import java.util.List;
  * 模拟客户端监听zookeeper
  * @author Mr.MC
  */
-public class ZkClient extends BaseServer {
+public class DistributeClient extends BaseServer {
 
     private String connectString = "10.111.208.237:2181,10.111.208.237:2182,10.111.208.237:2183";
 
@@ -23,7 +23,7 @@ public class ZkClient extends BaseServer {
     private ZooKeeper zk;
 
     public static void main(String[] args) throws IOException, InterruptedException, KeeperException {
-        ZkClient client = new ZkClient();
+        DistributeClient client = new DistributeClient();
         // 1、获取zookeeper连接
         client.getConnect();
 

@@ -12,7 +12,7 @@ import java.util.List;
 /**
  * @author Mr.MC
  */
-public class ZkClientTest extends BaseServer {
+public class DistributeClient extends BaseServer {
 
     private String connectString = "10.111.208.237:2181,10.111.208.237:2182,10.111.208.237:2183";
 
